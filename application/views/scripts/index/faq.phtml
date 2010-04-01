@@ -1,0 +1,98 @@
+<h3>Requirements</h3>
+
+<p>Due to technical limitations of the functions used, you must be
+running PHP version 4.0.6 or higher in a Linux environment, or version
+4.3.0 on a Windows environment. Also, you must have the PHP GD version
+2.0.1 or later installed (2.0.28 or later is recommended).</p>
+
+<p>The oldest PHP version this script has been successfully tested
+on was a Linux system running PHP version 4.3.11 and PHP GD version
+2.0.28, if you've tested UberGallery successfully on an older version of
+Linux or on any Windows server, I'd like to know, please contact me.</p>
+
+<p>For more information on PHP and PHP GD, please see <a href="http://www.php.net">http://www.php.net</a></p>
+
+<div class="hr"><hr /></div>
+
+<h3>Included Files/Folders</h3>
+
+<pre>
+ubergallery/
+|  cache/                        - Default cache directory
+|  images/                       - Default image directory (put your images here)
+|  resources/
+|  |  css/                       - Script styles
+|  |  |  colorbox.css
+|  |  |  ubergallery.css
+|  |  images/                    - Script images
+|  |  |  bg.png
+|  |  |  border.png
+|  |  |  controls.png
+|  |  |  images.png
+|  |  |  loading_background.png
+|  |  |  loading.gif
+|  |  |  page_white_stack.png
+|  |  js/                        - Script JavaScript
+|  |  |  jquery.colorbox.js
+|  |  |  jquery.js
+documentation/
+|  css/
+|  |  ie-fixes.css
+|  |  style.css
+|  files/
+|  |  changelog.txt              - Script changelog
+|  |  license.txt                - License information
+|  images/
+|  |  arrow_up.png
+|  |  github.png
+|  |  twitter.png
+|  |  ubergallery_logo.png
+|  index.html                    - This documentation
+index.php                        - Main gallery script
+README                           - Basic README file
+</pre>
+
+<div class="hr"><hr /></div>
+
+<h2>Pagination</h2>
+
+<p>To enable pagination, open index.php, find <tt>$imgPerPage = 0;</tt>
+at the top and set this value to the number of images you would like to
+display per page.</p>
+
+<p><strong>NOTE:</strong> If pagination is enabled, the script will
+generate thumbnails on a per-page basis. You do not have to worry about
+this though, the first time a visitor visits a page without thumbnails,
+it will automatically generate the thumbnails, however this may cause
+the page to take several seconds to load the first time it processes.</p>
+
+<div class="hr"><hr /></div>
+
+<h2>Page Caching</h2>
+
+<p>Page caching can drastically reduce the CPU load on your server
+and is more efficient for servers with high traffic. To enable page
+caching, edit the "$expireTime = 0;" value found at the top of the
+ubergallery/ubergallery.php script. This value is the time in minutes
+after which a new cach file will be generated.</p>
+
+<p><strong>NOTE:</strong> At the moment, if you upload new images or
+make a change to the script while caching is enabled, you will have to
+delete the cache files or wait the ammouont of time specified before
+your changes will be reflected on the page.</p>
+
+<p>To delete the cache files, use an FTP program or shell access to
+delete the "gallery-cache" folder and all of it's contents.</p>
+
+<div class="hr"><hr /></div>
+
+<h2>Update Notifications</h2>
+
+<p>To enable the update notification, open index.php, find <tt>$verCheck
+= false;</tt> and change this value to <tt>true</tt>. Once done, whenever an
+update to UberGallery is available, a message will appear at the bottom
+of your gallery informing you of this new version and providing a link
+to the new version.</p>
+
+<p>You may also get update notifications by following
+<a href="http://twitter.com/ubergallery">@ubergallery</a> on Twitter.</p>

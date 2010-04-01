@@ -1,0 +1,376 @@
+/* ---------------------------------------- */
+/* -----| GENERAL |------------------------ */
+/* ---------------------------------------- */
+
+html {	
+  font-size: 100%;
+}
+
+body {
+  background: #323232 url(/images/bg.png) repeat left top;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+a {
+  color: #369;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #333;
+}
+
+#wrapper {
+  margin: 1em auto;
+  width: 760px;
+}
+
+/* ---------------------------------------- */
+/* -----| HEADER |------------------------- */
+/* ---------------------------------------- */
+
+#header {
+	background-color: #DDF;
+	color: #369;
+	font-weight: bold;
+	padding: 10px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+}
+
+#title {
+  float: left;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1px 0 0;
+}
+
+#header ul#sub-header {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#header ul#sub-header li {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+}
+
+#header ul#sub-header li a {
+  /* color: #555; */
+  display: block;
+  font-size: .9em;
+  font-weight: bold;
+  padding: 5px 7px;
+  text-decoration: none;
+}
+
+#header ul#sub-header li a:hover {
+	background-color: #369;
+	border-radius: 3px;
+	color: #FFF;
+	text-decoration: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+
+/* ---------------------------------------- */
+/* -----| NAVIGATION |--------------------- */
+/* ---------------------------------------- */
+
+#navbar {
+  background-color: #369;
+  color: #FFF;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation {
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+
+#navigation li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  margin-right: 5px;
+}
+
+#navigation li a {
+  color: #FFF;
+  display: block;
+  float: left;
+  font-size: .9em;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#navigation li a:hover {
+	text-decoration: underline;
+}
+
+#navigation li.active a {
+  background-color: #FFF;
+  color: #369;
+}
+
+
+/* ---------------------------------------- */
+/* -----| SOCIAL ICONS |------------------- */
+/* ---------------------------------------- */
+
+
+#follow-us {
+	padding: 0;
+	margin: 4px 10px;
+}
+
+#follow-us li.title {
+  color: #FFF;
+  font-size: .75em;
+  margin: 4px 0;
+}
+
+#follow-us li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  margin-left: 5px;
+}
+	
+#follow-us li a {
+  display: block;
+  float: left;
+  margin: 4px 0;
+  text-decoration: none;
+}
+
+#follow-us li a img {
+	border: none;
+}
+
+
+
+/* ---------------------------------------- */
+/* -----| CONTENT |------------------------ */
+/* ---------------------------------------- */
+
+#content {
+	background-color: #FFF;
+	padding: 10px;
+}
+
+#announce {
+  background-color: #CDF;
+  border: 1px solid #369;
+  margin: 0 0 10px !important;
+  padding: 3px 0;
+}
+
+#content p {
+  font-size: .9em;
+  line-height: 1.2em;
+  margin: 0 1.5em 1em;
+}
+
+#content h1 {
+  font-size: 1.5em;
+  margin: 0 0 .2em;
+}
+
+#content h2 {
+  font-size: 1.2em;
+  margin: .8em 0 .5em 0;
+  width: 100%;
+}
+
+#content h3 {
+  font-size: 1em;
+  margin: .8em 0 .5em 0;
+}
+
+#content h4 {
+  font-size: .8em;
+  margin: .8em 0 .5em 0;
+}
+
+#content h5 {
+  font-size: .7em;
+  margin: .8em 0 .5em 0;
+}
+
+#content li {
+  font-size: .9em;
+  margin-bottom: .3em;
+}
+
+#content div.hr {
+  background-color: #CCC;
+  border: 0;
+  clear: both;
+  height: 1px;
+  margin: 1.2em 0;
+  width: 100%;
+}
+
+#content div.hr hr {
+  display: none;
+}
+
+#content pre {
+  background-color: #EEF;
+  color: #000;
+  display: block;
+  font-size: 13px;
+  line-height: 17px;
+  margin: .8em 1.5em;
+  overflow: auto;
+  padding: 5px;
+}
+
+#content ol pre, #content ul pre {
+  margin: .5em 0 !important;
+}
+
+.top {
+  background: transparent url('/images/arrow_up.png') no-repeat center center;
+  float: right;
+  height: 16px;
+  padding: 3px;
+  width: 16px;
+}
+
+.top:hover {
+	background-color: #E0E0E0;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+
+/* ---------------------------------------- */
+/* -----| DL-BOX |------------------------- */
+/* ---------------------------------------- */
+
+ul.dl-box {
+  list-style: none;
+  padding: 0;
+  margin-left: 1.5em;
+}
+
+ul.dl-box li {
+  background-color: #DDF;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  width: 21em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+ul.dl-box li:hover {
+  /* NULL */
+}
+
+ul.dl-box li a {
+  background: transparent url(/images/download_arrow.png) no-repeat .5em .2em;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  padding: .6em .5em;
+  padding-left: 60px;
+  text-decoration: none;
+}
+
+ul.dl-box a:hover {
+  color: #333;
+}
+
+ul.dl-box li a img {
+  float: left;
+  border: none;
+  padding-right: 5px;
+  position: relative;
+  top: -7px;
+}
+
+.updated {
+  font-size: 1em;
+  font-weight: normal;
+  color: #555;
+}
+
+.version {
+  /* justify: right; */
+  font-size: 0.75em;
+  font-weight: normal;
+  color: #555;
+}
+
+
+/* ---------------------------------------- */
+/* -----| FOOTER |------------------------- */
+/* ---------------------------------------- */
+
+#footer {
+  background-color: #DDF;
+  color: #369;
+  font-size: .9em;
+  padding: 6px 10px;
+  -moz-border-radius-bottomleft:5px;
+  -moz-border-radius-bottomright:5px;
+}
+
+#footer .left {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+
+#footer .right {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+
+/* ---------------------------------------- */
+/* -----| MISCELLANEOUS |------------------ */
+/* ---------------------------------------- */
+
+.left {
+	float: left;
+	width: auto;
+}
+
+.right {
+	float: right;
+	width: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+/* CLEAR FIX*/
+.clearfix:after {content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
