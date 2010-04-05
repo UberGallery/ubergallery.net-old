@@ -41,3 +41,11 @@ $router->addRoute(
                                array('controller'   => 'index',
                                      'action'       => 'contact'))
 );
+
+// Version Check
+$router->addRoute(
+    'version-check',
+    new Zend_Controller_Router_Route('version-check.php',
+                               array('controller'   => 'index',
+                                     'action'       => 'version-check'))
+);
