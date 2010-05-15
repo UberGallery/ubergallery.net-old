@@ -16,14 +16,9 @@ class IndexController extends Zend_Controller_action
         $this->view->title = 'Installation';
     }
 
-    public function customizeAction()
+    public function configurationAction()
     {
-        $this->view->title = 'Customize';
-    }
-
-    public function faqAction()
-    {
-        $this->view->title = 'FAQs';
+        $this->view->title = 'Configuration';
     }
 
     public function contactAction()

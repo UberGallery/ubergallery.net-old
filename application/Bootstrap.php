@@ -18,28 +18,20 @@ $router->addRoute(
                                      'action'       => 'installation'))
 );
 
-// Customize
+// Configuration
 $router->addRoute(
-    'customize',
-    new Zend_Controller_Router_Route('customize',
+    'configuration',
+    new Zend_Controller_Router_Route('configuration',
                                array('controller'   => 'index',
-                                     'action'       => 'customize'))
+                                     'action'       => 'configuration'))
 );
 
-// FAQ
+// Demo
 $router->addRoute(
-    'faq',
-    new Zend_Controller_Router_Route('faq',
+    'demo',
+    new Zend_Controller_Router_Route('demo',
                                array('controller'   => 'index',
-                                     'action'       => 'faq'))
-);
-
-// Contact
-$router->addRoute(
-    'contact',
-    new Zend_Controller_Router_Route('cuztomize',
-                               array('controller'   => 'index',
-                                     'action'       => 'contact'))
+                                     'action'       => 'demo'))
 );
 
 // Version Check
