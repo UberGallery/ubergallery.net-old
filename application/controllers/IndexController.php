@@ -37,7 +37,7 @@ class IndexController extends Zend_Controller_action
         $this->_helper->layout->disableLayout();
         $this->_helper->viewRenderer->setNoRender(true);
 
-        $currentVersion = "1.6.2";
+        $currentVersion = "1.6.3";
         $clientVersion = $_GET['ver'];
 
         if ($clientVersion < $currentVersion) {
