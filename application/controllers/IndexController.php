@@ -21,6 +21,11 @@ class IndexController extends Zend_Controller_action
         $this->view->js[]   = '/demo-gallery/ubergallery/resources/js/jquery.colorbox.js';
     }
 
+    public function newsAction()
+    {
+        $this->view->title  = 'News';
+    }
+
     public function installationAction()
     {
         $this->view->title  = 'Installation';

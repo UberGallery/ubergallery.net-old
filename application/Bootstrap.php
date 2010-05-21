@@ -10,6 +10,14 @@ require_once 'Zend/Controller/Router/Route.php';
 $ctrl  = Zend_Controller_Front::getInstance();
 $router = $ctrl->getRouter();
 
+// News
+$router->addRoute(
+    'news',
+    new Zend_Controller_Router_Route('news',
+                               array('controller'   => 'index',
+                                     'action'       => 'news'))
+);
+
 // Installation
 $router->addRoute(
     'installation',
