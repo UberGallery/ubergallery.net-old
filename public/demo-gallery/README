@@ -1,0 +1,29 @@
+UberGallery
+------------------------------------------------------------------
+UberGallery is a simple, yet powerful, PHP photo gallery that will 
+basically manage itself for you. UberGallery supports .jpg, .gif and
+.png image types, and will automatically creates thumbnails on the fly.
+The main feature of this gallery is it automatically outputs XHTML
+compliant markup for inclusion on a web page. The UberGallery will also
+automatically prune it's thumbnails, so when you delete an image from
+the images folder, it will delete the corresponding thumbnail. The
+gallery also creates a log file for reference and debugging. The
+UberGallery is licensed under the MIT License.
+
+UberGallery also includes dynamic pagination. This allows users with 
+larger galleries to split the gallery up into several smaller pages so
+visitors can easily browse those pages using a navigation bar below the
+gallery. GZip compression is also implemented on the default index.php
+file included with the gallery which helps to reduce bandwidth usage
+and improves page load times significantly.
+
+
+Documentation
+------------------------------------------------------------------
+For full documentation, refer to http://www.ubergallery.net
+
+
+Copyright Notice
+------------------------------------------------------------------
+Copyright (C) 2010 Chris Kankiewicz <Chris@ChrisKankiewicz.com>
+UberGallery is dual licensed under the MIT license and GPL 2.0 license.
