@@ -23,7 +23,7 @@
 
 <div id="wrapper">
     <div id="header" class="clearfix">
-        <h1 id="title"><img src="/images/ubergallery_logo.png" alt="UberGallery" /></h1>
+        <div id="title"><img src="/images/ubergallery_logo.png" alt="UberGallery" /></div>
     </div>
     <div id="navbar" class="clearfix">
         <ul id="navigation" class="left">
@@ -40,9 +40,9 @@
             <li><a href="http://ubergallery.tumblr.com/rss" title="News Feed"><img src="/images/social-icons/rss_16.png" alt="News Feed" /></a></li>
         </ul>
     </div>
+    <h1 id="page-title"><?= $this->title; ?></h1>
     <div id="content" class="clearfix">
         <? // <center><h2 id="announce">CK-Gallery is now UberGallery!</h2></center> ?>
-        <h1 id="page-title"><?= $this->title; ?></h1>
         <?= $this->layout()->content; ?>
     </div>
 
