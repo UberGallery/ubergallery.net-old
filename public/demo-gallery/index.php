@@ -221,7 +221,7 @@ if (file_exists($cacheFile) && time() - $cacheTime < filemtime($cacheFile) && $c
 
 		// Previous arrow
 		$previousPage = $currentPage - 1;
-		echo("        <li".($currentPage > 1 ? "><a href=\"$pageName?page=$previousPage\" title=\"Previous Page\">&lt;</a>" : " class=\"inactive\">&lt;")."</li>\r\n");
+		echo("        <li".($currentPage > 1 ? "><a href=\"$pageName?page=$previousPage\" title=\"Previous Page\">&larr;</a>" : " class=\"inactive\">&larr;")."</li>\r\n");
 
 		// Page links
 		for ($x = 1; $x <= $totalPages; $x++) {
@@ -230,7 +230,7 @@ if (file_exists($cacheFile) && time() - $cacheTime < filemtime($cacheFile) && $c
 
 		// Next arrow
 		$nextPage = $currentPage + 1;
-		echo("        <li".($currentPage < $totalPages ? "><a href=\"$pageName?page=$nextPage\" title=\"Next Page\">&gt;</a>" : " class=\"inactive\">&gt;")."</li>\r\n");
+		echo("        <li".($currentPage < $totalPages ? "><a href=\"$pageName?page=$nextPage\" title=\"Next Page\">&rarr;</a>" : " class=\"inactive\">&rarr;")."</li>\r\n");
 
 		echo("      </ul>\r\n");
 	}
