@@ -161,7 +161,6 @@ a:hover {
 }
 
 
-
 /* ---------------------------------------- */
 /* -----| CONTENT |------------------------ */
 /* ---------------------------------------- */
@@ -297,6 +296,63 @@ a:hover {
     display: inline-block;
     font-size: 0.75em;
     font-weight: normal;
+}
+
+
+/* ---------------------------------------- */
+/* -----| BLOG |--------------------------- */
+/* ---------------------------------------- */
+
+.tumblr_posts {
+    margin: 0;
+    padding: 0;
+}
+
+.tumblr_post {
+    border-bottom: 1px dotted #999;
+    list-style: none;
+    margin: 0 !important;
+    padding: 1.2em 0;
+}
+
+.tumblr_title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.tumblr_caption {
+    font-style: italic;
+}
+
+.tumblr_photo_post {
+    text-align: center;
+}
+
+.tumblr_post pre {
+    background-color: #CDF;
+    color: #333;
+    font: 11px monospace;
+    overflow: auto;
+    padding: 10px;
+}
+
+.tumblr_photo_post img {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 5px;
+}
+
+.tumblr_post ul li {
+    list-style-type: disc;
+    margin-left: 10px;
+}
+
+#tumblr-credit {
+    color: #999;
+    font-size: .9em;
+    padding: 3px 0;
+    text-align: right;
 }
 
 
