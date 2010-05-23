@@ -287,15 +287,15 @@ function createThumb($source,$dest,$thumb_size) {
 
 	if ($imgInfo[2] == IMAGETYPE_JPEG) {
 		$im = imagecreatefromjpeg($source);
-		imagecopyresampled($new_im,$im,0,0,$x,$y,$thumb_size,$thumb_size,$width,$height);
+		@imagecopyresampled($new_im,$im,0,0,$x,$y,$thumb_size,$thumb_size,$width,$height);
 		imagejpeg($new_im,$dest,75); // Thumbnail quality (Value from 1 to 100)
 	} elseif ($imgInfo[2] == IMAGETYPE_GIF) {
 		$im = imagecreatefromgif($source);
-		imagecopyresampled($new_im,$im,0,0,$x,$y,$thumb_size,$thumb_size,$width,$height);
+		@imagecopyresampled($new_im,$im,0,0,$x,$y,$thumb_size,$thumb_size,$width,$height);
 		imagegif($new_im,$dest);
 	} elseif ($imgInfo[2] == IMAGETYPE_PNG) {
 		$im = imagecreatefrompng($source);
-		imagecopyresampled($new_im,$im,0,0,$x,$y,$thumb_size,$thumb_size,$width,$height);
+		@imagecopyresampled($new_im,$im,0,0,$x,$y,$thumb_size,$thumb_size,$width,$height);
 		imagepng($new_im,$dest);
 	}
 }
