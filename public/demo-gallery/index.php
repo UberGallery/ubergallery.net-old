@@ -18,7 +18,7 @@ $verCheck		= false;						// Set to true to enable update notifications
 
 $version = "1.6.2"; // Gallery version
 
-if (isset($_GET['page'])) {
+if (@$_GET['page']) {
 	// Sanitize input and set current page
 	$currentPage = (integer) $_GET['page'];
 } else {
@@ -79,7 +79,7 @@ if ($imgPerPage <= 0 || $imgPerPage >= $totalImages) {
 	$totalPages = 1;
 } elseif ($imgPerPage > 0 && $imgPerPage < $totalImages) {
 	$totalPages = ceil($totalImages / $imgPerPage);
-	if ($_GET['page'] < 1) {
+	if (@$_GET['page'] < 1) {
 		$currentPage = 1;
 	} elseif ($_GET['page'] > $totalPages) {
 		$currentPage = $totalPages;
