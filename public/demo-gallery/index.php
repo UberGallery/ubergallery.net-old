@@ -9,7 +9,7 @@ $thumbsDir		= "../public/demo-gallery/ubergallery/cache";			// Thumbnails direct
 $logFile		= "../public/demo-gallery/ubergallery/log.txt";		// Directory/Name of log file
 $thumbSize		= 100;							// Thumbnail width/height in pixels
 $imgPerPage		= 24;							// Images per page (0 disables pagination)
-$cacheExpire	= 0;							// Frequency (in minutes) of cache refresh
+$cacheExpire	= 360;							// Frequency (in minutes) of cache refresh
 $formatted		= false;							// Set to false to output bare (no styles) page
 $verCheck		= false;						// Set to true to enable update notifications
 
