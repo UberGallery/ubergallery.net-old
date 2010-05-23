@@ -266,12 +266,13 @@ a:hover {
 /* ---------------------------------------- */
 
 #dl-box {
-    background: #DDF url(/images/download_arrow.png) no-repeat 5px 2px;
+    background: #DDF url(/images/download_arrow.png) no-repeat 5px center;
     border-radius: 5px;
     color: #333;
     cursor: pointer;
     display: inline-block;
     font-size: 1.1em;
+    line-height: 1.2em;
     list-style: none;
     padding: 8px;
     padding-left: 56px;
@@ -282,6 +283,8 @@ a:hover {
 }
 
 #dl-box:hover {
+    background-color: #369;
+    color: #FFF !important;
 }
 
 #dl-box strong {
