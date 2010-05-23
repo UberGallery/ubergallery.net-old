@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>UberGallery - The Simple PHP Photo Gallery</title>
+<title><?= $this->title; ?> | UberGallery - The Simple PHP Photo Gallery</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <? if(is_array($this->css)): ?>
     <? foreach($this->css as $css): ?>

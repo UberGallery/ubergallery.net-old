@@ -9,7 +9,7 @@ class IndexController extends Zend_Controller_action
 
     public function indexAction()
     {
-        $this->view->title  = 'UberGallery - The Simple PHP Photo Gallery';
+        $this->view->title  = 'Home';
     }
 
     public function demoAction()

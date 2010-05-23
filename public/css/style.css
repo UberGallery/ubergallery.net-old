@@ -173,13 +173,9 @@ a:hover {
     margin: 0;
 }
 
-
-/* ---------------------------------------- */
-/* -----| CONTENT |------------------------ */
-/* ---------------------------------------- */
-
 #content {
 	background-color: #FFF;
+	font-size: .8em;
 	padding: 10px;
 }
 
@@ -191,8 +187,6 @@ a:hover {
 }
 
 #content p {
-  font-size: .9em;
-  line-height: 1.2em;
   margin: 0 1.5em 1em;
 }
 
@@ -203,7 +197,7 @@ a:hover {
 
 #content h2 {
   font-size: 1.1em;
-  margin: .8em 0 .5em 0;
+  margin: 0 0 .7em;
   width: 100%;
 }
 
@@ -220,11 +214,6 @@ a:hover {
 #content h5 {
   font-size: .7em;
   margin: .8em 0 .5em 0;
-}
-
-#content li {
-  font-size: .9em;
-  margin-bottom: .3em;
 }
 
 #content div.hr {
@@ -276,11 +265,12 @@ a:hover {
 /* ---------------------------------------- */
 
 #dl-box {
-    background: #DDF url(/images/download_arrow.png) no-repeat 3px 5px;
+    background: #DDF url(/images/download_arrow.png) no-repeat 5px 2px;
     border-radius: 5px;
     color: #333;
     cursor: pointer;
     display: inline-block;
+    font-size: 1.1em;
     list-style: none;
     padding: 8px;
     padding-left: 56px;
@@ -324,14 +314,14 @@ a:hover {
 .tumblr_post {
     border-bottom: 1px solid #999;
     list-style: none;
-    margin: 0 !important;
-    padding: 1.2em 0;
+    margin: 0 0 1.2em !important;
+    padding: 0 0 1.2em;
 }
 
 .tumblr_title {
     font-size: 1.1em;
     font-weight: bold;
-    margin-bottom: .5em;
+    margin-bottom: .7em;
 }
 
 .tumblr_caption {
@@ -371,8 +361,7 @@ a:hover {
 #more-news {
     color: #999;
     font-size: .9em;
-    text-align: right;
-    padding: 10px 0 0;
+    text-align: center;
 }
 
 /* ---------------------------------------- */
